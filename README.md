@@ -51,7 +51,7 @@ If Scoop is not installed, follow the [Scoop installation guide](https://scoop.s
 brew install llmfit
 ```
 
-### MacPorts
+#### MacPorts
 ```sh
 port install llmfit
 ```
@@ -67,6 +67,19 @@ Downloads the latest release binary from GitHub and installs it to `/usr/local/b
 ```sh
 curl -fsSL https://llmfit.axjns.dev/install.sh | sh -s -- --local
 ```
+
+### uv / pip
+To install or update llmfit:
+```sh
+uv tool install -U llmfit
+```
+
+To run without installing:
+```sh
+uvx llmfit
+```
+
+You can also install llmfit as a Python package in the normal way with tools such as pip or uv.
 
 ### Docker / Podman
 ```sh
